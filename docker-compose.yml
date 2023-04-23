@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  php-composer:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/var/www/html/
+    container_name: php-composer
